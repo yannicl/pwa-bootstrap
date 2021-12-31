@@ -29,6 +29,47 @@
   <main>
     <div class="container-md">
       <h1 class="bg-dark text-white"><i class="bi-alarm"></i> Bonjour le monde!</h1>
+
+      <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+        Mon panier
+      </a>
+      
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Mon panier :</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p class="fw-bold">Sous-total: <span class="text-danger">9,00 $</span></p>
+          <table class="table table-striped table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Article</th>
+                <th scope="col">Quantité</th>
+                <th scope="col">Prix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Café</td>
+                <td>1</td>
+                <td>2.25</td>
+              </tr>
+              <tr>
+                <td>Jus d'orange</td>
+                <td>1</td>
+                <td>1.75</td>
+              </tr>
+              <tr>
+                <td>Tartine au chocolat</td>
+                <td>2</td>
+                <td>2.50</td>
+              </tr>
+            </tbody>
+          </table>
+          <button type="button" class="btn btn-secondary me-1">Modifier les quantités</button><button type="button" class="btn btn-primary">Payer</button>
+        </div>
+      </div>
     </div>
   </main>
 
