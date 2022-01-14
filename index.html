@@ -26,7 +26,19 @@
 
   <main>
     <div class="container-md">
-      <h1 class="bg-dark text-white"><i class="bi-alarm"></i> Bonjour le monde!</h1>
+      <form onsubmit="return soumettreMessage(event)">
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Insérer le texte ici :</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+        </div>
+        <div class="mb-3">
+          <button type="submit" class="btn btn-primary">Compter les mots</button>
+        </div>
+        <div class="">
+          <label for="resultat" class="form-label">Résultat :</label>
+          <input class="form-control" id="resultat"></input>
+        </div>
+      </form>
     </div>
   </main>
 
