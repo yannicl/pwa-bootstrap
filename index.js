@@ -5,6 +5,7 @@ myWorker.onmessage = function(e) {
     document.getElementById("resultat").value = e.data;
 }
 
+// appelee sur le click du bouton pour compter les mots
 function soumettreMessage(event) {
     event.preventDefault();
 
