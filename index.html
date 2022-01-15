@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="fr">
 
@@ -15,7 +16,7 @@
   <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">-->
   <link rel="stylesheet" href="icons-1.7.2/font/bootstrap-icons.css">
 
-  <title>Bonjour le monde!</title>
+  <title>Labo1</title>
 </head>
 
 <body>
@@ -25,11 +26,87 @@
   <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
 
   <main>
-    <div class="container-md">
+    <!-- <div class="container-fluid">
       <h1 class="bg-dark text-white"><i class="bi-alarm"></i> Bonjour le monde!</h1>
+    </div> -->
+ 
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="images/logo.jpg" alt="The High Company Logo" height="60"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">The High Company</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">À propos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Produits
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Indica</a></li>
+              <li><a class="dropdown-item" href="#">Sativa</a></li>
+              <li><a class="dropdown-item" href="#">Hybride</a></li>
+            </ul>
+          </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Recherche" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Rechercher</button>
+        </form>
+      </div>
     </div>
-  </main>
-
+  </nav>
+  <div class="container-fluid bg-dark text-white text-center py-5">
+    <div class="row">
+      <h2>
+        « Tout est mieux avec un sachet de weed. » Stewie Griffin
+      </h2>
+      <p>
+         Family Guy, saison 4 episode 20.
+      </p>
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card text-center">
+        <img src="images/indicaleaf.jpg" class="card-img-top" alt="Indica" height="600" width="600">
+        <div class="card-body">
+          <h3 class="card-title"><strong>INDICA</strong></h3>
+          <h5 class="card-subtitle">Ses effets sont généralement décrits comme pouvant être calmants, relaxants, ou pouvant créer de la somnolence.</h5>
+          <p class="card-text">Les plants de cannabis indica sont généralement courts et fournis. Les têtes de ses sommités florales sont habituellement compactes et trapues.</p>
+          <a href="#" class="btn btn-primary">Détails</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card text-center">
+        <img src="images/sativaleaf.jpg" class="card-img-top" alt="Sativa" height="600" width="600">
+        <div class="card-body">
+          <h3 class="card-title"><strong>SATIVA</strong></h3>
+          <h5 class="card-subtitle">Ses effets sont généralement décrits comme pouvant être énergisants, euphorisants ou encore cérébralement stimulants. </h5>
+          <p class="card-text">Les plants de cannabis sativa sont généralement plus élancés que les indica. Les têtes de leurs sommités florales sont habituellement plus longues et moins denses que celles de la catégorie indica. </p>
+          <a href="#" class="btn btn-primary">Détails</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card text-center">
+        <img src="images/hybridleaf.jpg" class="card-img-top" alt="Hybrid" height="600" width="600">
+        <div class="card-body">
+          <h3 class="card-title"><strong>HYBRIDE</strong></h3>
+          <h5 class="card-subtitle">Ses effets sont généralement décrits comme pouvant être un mélange des effets de l'indica et du sativa.</h5>
+          <p class="card-text">L’hybride est un croisement botanique des espèces indica et sativa. Il offre un mélange des caractéristiques des deux catégories. Les catégories d’hybride peuvent avoir une dominante indica ou sativa ou être un égal mélange des deux.</p>
+          <a href="#" class="btn btn-primary">Détails</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+</main>
   <script src="index.js"></script>
 
 </body>
