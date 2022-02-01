@@ -3,17 +3,13 @@ if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('sw.js');
 
 }
+
+// lancer toast au demarage de mon API
 Toasty();
-// if (window.location.protocol === 'http:') {
-//   const requireHTTPS = document.getElementById('requireHTTPS');
-//   const link = requireHTTPS.querySelector('a');
-//   link.href = window.location.href.replace('http://', 'https://');
-//   requireHTTPS.classList.remove('hidden');
-// }
+
 
 
 // Initialize deferredPrompt for use later to show browser install prompt.
-
 
 let deferredPrompt;
 
@@ -27,16 +23,35 @@ window.addEventListener('beforeinstallprompt', (e) => {
   // Optionally, send analytics event that PWA install promo was shown.
   console.log(`'beforeinstallprompt' event was fired.`);
 
-  const installAppButton = document.getElementById('installAppButton');
+  // const installAppButton = document.getElementById('installAppButton');
 
-  if (installAppButton) {
-    installAppButton.addEventListener('click', function () {
+  // if (installAppButton) {
+  //   installAppButton.addEventListener('click', function () {
 
       deferredPrompt.prompt();
 
-    })
-  }
+    // })
+  // }
 });
+
+var option = {
+  animation: true,
+  delay: 4000
+};
+function Toasty() {
+  var toastHTMLElement = document.getElementById("EpicToast");
+  var toastElement = new bootstrap.Toast(toastHTMLElement, option);
+  toastElement.show();
+}
+
+
+
+// if (window.location.protocol === 'http:') {
+//   const requireHTTPS = document.getElementById('requireHTTPS');
+//   const link = requireHTTPS.querySelector('a');
+//   link.href = window.location.href.replace('http://', 'https://');
+//   requireHTTPS.classList.remove('hidden');
+// }
 
 
 // installAppButton .addEventListener('click', async () => {
@@ -51,23 +66,3 @@ window.addEventListener('beforeinstallprompt', (e) => {
 //   // We've used the prompt, and can't use it again, throw it away
 //   deferredPrompt = null;
 // });
-
-
-
-var option = {
-  animation: true,
-  delay: 4000
-};
-function Toasty() {
-  var toastHTMLElement = document.getElementById("EpicToast");
-  var toastElement = new bootstrap.Toast(toastHTMLElement, option);
-  toastElement.show();
-}
-
-// function showInstallPromotion() {
-//   const toastLiveExample = document.getElementById('liveToast');
-//   const toast = new bootsrap.toast(toastLiveExample, { delay: 30000 });
-//   toast.show();
-// }
-
-
