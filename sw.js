@@ -14,6 +14,9 @@ this.addEventListener('install', function(event) {
           '/icon-256x256.png',
           '/icon-384x384.png',
           '/icon-512x512.png',
+          '/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js',
+          '/bootstrap-5.1.3-dist/css/bootstrap.min.css',
+          '/icons-1.7.2/font/bootstrap-icons.css'
           
             
         ]);
