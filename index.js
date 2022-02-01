@@ -56,7 +56,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 
 var option = {
   animation: true,
-  delay: 3000
+  delay: 4000
 };
 function Toasty() {
   var toastHTMLElement = document.getElementById("EpicToast");
