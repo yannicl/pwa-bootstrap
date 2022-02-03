@@ -2,21 +2,22 @@ this.addEventListener('install', function(event) {
     event.waitUntil(
       caches.open('v1').then(function(cache) {
         return cache.addAll([
-         '',
-          'index.html',
-          'index.js',
+
+         '/',
+          'pwa-bootstarp/index.html',
+          'pwa-bootstarp/index.js',
           // '/favicon.ico',
-          'mobile2.jpg',
-          'ordinateur.png',
-          'tablettes.jpg',
-          'icon1.png',
-          'icon-192x192.png',
-          'icon-256x256.png',
-          'icon-384x384.png',
-          'icon-512x512.png',
-          'bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js',
-          'bootstrap-5.1.3-dist/css/bootstrap.min.css',
-          'icons-1.7.2/font/bootstrap-icons.css'
+          'pwa-bootstarp/mobile2.jpg',
+          'pwa-bootstarp/ordinateur.png',
+          'pwa-bootstarp/tablettes.jpg',
+          'pwa-bootstarp/icon1.png',
+          'pwa-bootstarp/icon-192x192.png',
+          'pwa-bootstarp/icon-256x256.png',
+          'pwa-bootstarp/icon-384x384.png',
+          'pwa-bootstarp/icon-512x512.png',
+          'pwa-bootstarp/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js',
+          'pwa-bootstarp/bootstrap-5.1.3-dist/css/bootstrap.min.css',
+          'pwa-bootstarp/icons-1.7.2/font/bootstrap-icons.css'
           
             
         ]);
