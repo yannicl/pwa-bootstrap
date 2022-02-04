@@ -1,5 +1,10 @@
-self.addEventListener('push', function (e) {
-    console.log("push recu: " + e);
+self.addEventListener('push', function (event) {
+    console.log("push recu: " + event);
+    if (event.data) {
+        data = event.data.json();
+    }
+    console.log("donnee du push: " + JSON.stringify(data)); 
+
     envoyerNotification();
 });
 
