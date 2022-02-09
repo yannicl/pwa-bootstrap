@@ -1,0 +1,38 @@
+{
+    "theme_color": "#cd8946",
+    "background_color": "#d0beae",
+    "display": "standalone",
+    "scope": "/pwa-bootstrap/",
+    "start_url": "index.html",
+    "name": "Techno-Mobile",
+    "short_name": "T-M",
+    "description": "site de vente appareils \\u00e9l\\u00e9ctroniques (mobile-tablette-ordinateur) neuf",
+    "icons": [
+        {
+            "src": "/pwa-bootstrap/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/pwa-bootstrap/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/pwa-bootstrap/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/pwa-bootstrap/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "related_applications": [{
+        "platform": "web"
+      }, {
+        "platform": "play",
+        "url": "https://play.google.com/store/apps/details?id=com.google.samples.apps.iosched"
+      }]
+}
